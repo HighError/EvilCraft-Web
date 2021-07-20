@@ -3,7 +3,8 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-_ServerData _serverData = _ServerData(online: false, players: Map(), version: "");
+_ServerData _serverData =
+    _ServerData(online: false, players: Map(), version: "");
 
 class _ServerData {
   final bool online;
@@ -16,10 +17,15 @@ class _ServerData {
   factory _ServerData.fromJson(Map<String, dynamic> json) {
     var playersObj = json['players'];
 
-    return _ServerData(
-        online: json['online'],
-        players: new Map.from(playersObj),
-        version: json['version']);
+    if (json['online']) {
+      return _ServerData(
+          online: json['online'],
+          players: new Map.from(playersObj),
+          version: json['version']);
+    } else {
+      return _ServerData(
+          online: json['online'], players: new Map(), version: '');
+    }
   }
 }
 
@@ -50,4 +56,5 @@ Future<String> getServerOnline() async {
   return _playersOnline;
 }
 
-Future<String> getServerVersion() async => "Версія серверу: ${_serverData.version}";
+Future<String> getServerVersion() async =>
+    "Версія серверу: ${_serverData.version}";

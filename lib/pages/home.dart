@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                   fit: BoxFit.cover),
             ),
           ),
-          TestPage(),
+          AppBarCustom(),
           Align(
             alignment: FractionalOffset.center,
             child: Container(

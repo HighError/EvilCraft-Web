@@ -6,12 +6,12 @@ Color notSelected = Color(0xafffffff);
 Color appBarBackground = Color(0x66191919);
 Color openAppBarBackground = Color(0xaa191919);
 
-class TestPage extends StatefulWidget {
+class AppBarCustom extends StatefulWidget {
   @override
-  _TestPageState createState() => _TestPageState();
+  _AppBarCustomState createState() => _AppBarCustomState();
 }
 
-class _TestPageState extends State<TestPage> {
+class _AppBarCustomState extends State<AppBarCustom> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -83,9 +83,13 @@ List<Widget> navBarItems(context) {
     NavBarItem(
         text: "Головна",
         onPressFunction: () {
-          Navigator.of(context).popAndPushNamed('/');
+          Navigator.popAndPushNamed(context, '/');
         }),
-    //NavBarItem(text: "Учасники", onPressFunction: () {})
+    NavBarItem(
+        text: "Учасники",
+        onPressFunction: () {
+          Navigator.popAndPushNamed(context, '/players');
+        }),
   ];
   return _navBarItems;
 }
