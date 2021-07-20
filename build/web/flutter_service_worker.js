@@ -10,12 +10,10 @@ const RESOURCES = {
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/NOTICES": "8d0aa1809077996981eaa8cf7d8be07c",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"favicon.png": "26b5984f428600c11cb859140a2f9d4d",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "4d86918a26b7159241d185a4177ca1d8",
-"/": "4d86918a26b7159241d185a4177ca1d8",
-"main.dart.js": "b50fc530e075847729be7aaacb02f13f",
+"icons/favicon.png": "0664011718d813d90823a8821e812dd3",
+"index.html": "91a5d90d06b5be2af6cb599dbb2d8952",
+"/": "91a5d90d06b5be2af6cb599dbb2d8952",
+"main.dart.js": "7a6f3b0181519ac84d3cffd87001951e",
 "manifest.json": "d63d0e2325def56cfb168dababbc7cc6",
 "version.json": "546cdf9f1f182069a1b85b4d589929b7"
 };

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './pages/home.dart';
-import 'component/theme.dart';
+import 'components/theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,8 +12,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'EvilCraft',
       theme: theme(),
-      home: HomePage(title: 'Flutter Demo Home Page'),
       debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomePage(title: "EvilCraft"),
+      },
     );
   }
 }
