@@ -29,7 +29,7 @@ dependencies:
   provider: ^5.0.0
   stacked: ^2.2.3
   url_strategy: ^0.2.0
-  no_context_navigation: ^2.1.2
+  routemaster: ^0.9.5
 
 dev_dependencies:
   flutter_test:

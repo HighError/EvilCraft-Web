@@ -114,13 +114,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
-  no_context_navigation:
-    dependency: "direct main"
-    description:
-      name: no_context_navigation
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.1.2"
   path:
     dependency: transitive
     description:
@@ -142,6 +135,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.1"
+  routemaster:
+    dependency: "direct main"
+    description:
+      name: routemaster
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.9.5"
   sky_engine:
     dependency: transitive
     description: flutter
