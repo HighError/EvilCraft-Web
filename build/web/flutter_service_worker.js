@@ -7,12 +7,13 @@ const RESOURCES = {
 "assets/assets/images/logo.png": "26b5984f428600c11cb859140a2f9d4d",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "a56825f7acacb2ea6c4c407c43858186",
+"assets/NOTICES": "12d235b2d89c2296514e94a4487232c2",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "icons/favicon.png": "0664011718d813d90823a8821e812dd3",
-"index.html": "79606a0f0398257310cc278534a42601",
-"/": "79606a0f0398257310cc278534a42601",
-"main.dart.js": "898240f87295075f6617dea27c9e2c46",
+"index.html": "b006008753bcfd8e9224e94ea869eef8",
+"/": "b006008753bcfd8e9224e94ea869eef8",
+"index2.html": "5dcf404183b1a3e97020447db144fc9f",
+"main.dart.js": "fc43d7f636fe0c93400c98b1cdea21f5",
 "manifest.json": "d63d0e2325def56cfb168dababbc7cc6",
 "version.json": "546cdf9f1f182069a1b85b4d589929b7"
 };
