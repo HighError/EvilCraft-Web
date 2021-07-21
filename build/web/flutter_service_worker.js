@@ -10,12 +10,12 @@ const RESOURCES = {
 "assets/assets/images/players/Tretonrule.png": "fbe8ec1c37bd1a21f6c98ce04c9dccf6",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "07906dac191b76ec3ca584b9d27135d0",
+"assets/NOTICES": "1fb50370bf00702baba9c0c30ad4d98d",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "icons/favicon.png": "0664011718d813d90823a8821e812dd3",
 "index.html": "b006008753bcfd8e9224e94ea869eef8",
 "/": "b006008753bcfd8e9224e94ea869eef8",
-"main.dart.js": "c5c7aca121bac8259d825d23f3720960",
+"main.dart.js": "5b08a82f203185f7daa08891a95bcf9d",
 "manifest.json": "d63d0e2325def56cfb168dababbc7cc6",
 "version.json": "546cdf9f1f182069a1b85b4d589929b7"
 };

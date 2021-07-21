@@ -30,6 +30,7 @@ dependencies:
   stacked: ^2.2.3
   url_strategy: ^0.2.0
   routemaster: ^0.9.5
+  flutter_countdown_timer: ^4.1.0
 
 dev_dependencies:
   flutter_test:
