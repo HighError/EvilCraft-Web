@@ -23,8 +23,8 @@ class NavigationDrawer extends StatelessWidget {
       child: Column(
         children: [
           NavigationDrawerHeader(),
-          NavBarItem('Home', HomeRoute, icon: Icons.home,),
-          NavBarItem('Players', PlayersRoute, icon: Icons.person,),
+          NavBarItem('Головна', HomeRoute, icon: Icons.home,),
+          NavBarItem('Гравці', PlayersRoute, icon: Icons.person,),
         ],
       ),
     );

@@ -18,11 +18,11 @@ class NavigationBarTabletDesktop extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              NavBarItem('Home', HomeRoute, icon: Icons.home,),
+              NavBarItem('Головна', HomeRoute, icon: Icons.home,),
               SizedBox(
                 width: 60,
               ),
-              NavBarItem('Players', PlayersRoute, icon: Icons.person,),
+              NavBarItem('Гравці', PlayersRoute, icon: Icons.person,),
             ],
           ),
         ],
