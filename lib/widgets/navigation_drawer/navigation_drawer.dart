@@ -1,8 +1,7 @@
 import 'package:evilcraft_web/constants/app_colors.dart';
 import 'package:evilcraft_web/routing/route_names.dart';
+import 'package:evilcraft_web/widgets/navbar_item/navbar_item.dart';
 import 'package:flutter/material.dart';
-
-import 'drawer_item.dart';
 import 'navigation_drawer_header.dart';
 
 class NavigationDrawer extends StatelessWidget {
@@ -24,8 +23,8 @@ class NavigationDrawer extends StatelessWidget {
       child: Column(
         children: [
           NavigationDrawerHeader(),
-          DrawerItem('Home', Icons.home, HomeRoute),
-          DrawerItem('Players', Icons.person, PlayersRoute),
+          NavBarItem('Home', HomeRoute, icon: Icons.home,),
+          NavBarItem('Players', PlayersRoute, icon: Icons.person,),
         ],
       ),
     );

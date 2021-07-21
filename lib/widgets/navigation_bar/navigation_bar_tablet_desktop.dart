@@ -1,7 +1,7 @@
 import 'package:evilcraft_web/routing/route_names.dart';
 import 'package:flutter/material.dart';
 
-import 'navbar_item.dart';
+import '../navbar_item/navbar_item.dart';
 import 'navbar_logo.dart';
 
 class NavigationBarTabletDesktop extends StatelessWidget {
@@ -18,11 +18,11 @@ class NavigationBarTabletDesktop extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              NavBarItem('Home', HomeRoute),
+              NavBarItem('Home', HomeRoute, icon: Icons.home,),
               SizedBox(
                 width: 60,
               ),
-              NavBarItem('Players', PlayersRoute),
+              NavBarItem('Players', PlayersRoute, icon: Icons.person,),
             ],
           ),
         ],

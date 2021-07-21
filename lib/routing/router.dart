@@ -3,13 +3,14 @@ import 'package:evilcraft_web/view/home/home_view.dart';
 import 'package:evilcraft_web/view/players/players.dart';
 import 'package:flutter/material.dart';
 
-Route<dynamic> generateRoute(RouteSettings settings) {
+Route<dynamic>? generateRoute(RouteSettings settings) {
   switch (settings.name) {
     case HomeRoute:
       return _getPageRoute(HomeView());
     case PlayersRoute:
       return _getPageRoute(PlayersView());
     default:
+      return null;
   }
   return _getPageRoute(HomeView());
 }
