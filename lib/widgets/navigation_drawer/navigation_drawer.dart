@@ -10,7 +10,7 @@ class NavigationDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
+      width: 250,
       decoration: BoxDecoration(
         color: backgroundColor,
         boxShadow: [

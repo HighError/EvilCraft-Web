@@ -23,6 +23,7 @@ class NavBarItem extends StatelessWidget {
     );
     return GestureDetector(
       onTap: () {
+        Scaffold.of(context).openEndDrawer();
         routeMaster.push(navigationPath);
       },
       child: Provider.value(
