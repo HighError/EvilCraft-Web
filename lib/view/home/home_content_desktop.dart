@@ -23,13 +23,10 @@ class HomeContentDesktop extends StatelessWidget {
                   fontSize: 31,
                   height: 1.7,
                 ),
+                textAlign: TextAlign.center,
               ),
               CountdownTimer(
                 endTime: endTime,
-                textStyle: TextStyle(
-                  fontSize: 31,
-                  height: 1.7,
-                ),
                 widgetBuilder: (_, CurrentRemainingTime? time) {
                   if (time == null) {
                     return Text(
