@@ -5,4 +5,4 @@
 
 ## Де я можу переглянути сайт?
 
-Сайт доступний [тут](https://dev.evilcraft.eviloma.com/)
+Сайт доступний [тут](https://evilcraft.eviloma.com/)
