@@ -16,7 +16,7 @@ class HomeContentMobile extends StatelessWidget {
       children: [
         ServerInformation(),
         Text(
-          'До старту серверу:',
+          'До старту сервера:',
           style: TextStyle(
             fontSize: 22,
             height: 1.7,

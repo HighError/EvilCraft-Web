@@ -22,7 +22,7 @@ class NavigationBarTabletDesktop extends StatelessWidget {
               SizedBox(
                 width: 60,
               ),
-              NavBarItem('Гравці', PlayersRoute, icon: Icons.person,),
+              NavBarItem('Учасники', PlayersRoute, icon: Icons.person,),
             ],
           ),
         ],

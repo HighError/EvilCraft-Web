@@ -1,7 +1,7 @@
 import 'package:evilcraft_web/routing/route_names.dart';
 import 'package:evilcraft_web/utils/theme.dart';
 import 'package:evilcraft_web/view/layout_template/layout_template.dart';
-import 'package:evilcraft_web/view/players/players.dart';
+import 'package:evilcraft_web/view/players/players_view.dart';
 import 'package:flutter/material.dart';
 import 'package:routemaster/routemaster.dart';
 import 'package:url_strategy/url_strategy.dart';

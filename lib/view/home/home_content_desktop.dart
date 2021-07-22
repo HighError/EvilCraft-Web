@@ -18,7 +18,7 @@ class HomeContentDesktop extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'До старту серверу:',
+                'До старту сервера:',
                 style: TextStyle(
                   fontSize: 31,
                   height: 1.7,

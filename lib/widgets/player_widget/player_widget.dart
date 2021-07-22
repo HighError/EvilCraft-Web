@@ -2,53 +2,54 @@ import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class PlayerWidget extends StatelessWidget {
-  final String nickname;
-  final Color colorBorder;
+  final String nickName;
 
-  const PlayerWidget(
-      {Key? key, required this.nickname, this.colorBorder = Colors.white})
-      : super(key: key);
+  const PlayerWidget({Key? key, required this.nickName}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ResponsiveBuilder(
-      builder: (context, sizingInformation) {
-        double textSize =
-            sizingInformation.deviceScreenType == DeviceScreenType.mobile
-                ? 16
-                : 21;
-        return Container(
-          decoration: BoxDecoration(
-              border: Border.all(
-                color: colorBorder,
-              ),
-              borderRadius: BorderRadius.circular(20)),
-          margin: EdgeInsets.all(10),
-          child: LayoutBuilder(
+    return ResponsiveBuilder(builder: (context, sizingInformation) {
+      double fontSizeNicknane = 0;
+      switch (sizingInformation.deviceScreenType) {
+        case DeviceScreenType.mobile:
+          fontSizeNicknane = 16;
+          break;
+        case DeviceScreenType.tablet:
+          fontSizeNicknane = 19;
+          break;
+        case DeviceScreenType.desktop:
+          fontSizeNicknane = 21;
+          break;
+      }
+      return Container(
+        decoration: BoxDecoration(
+          border: Border.all(color: Colors.white),
+          borderRadius: BorderRadius.circular(15),
+        ),
+        margin: EdgeInsets.all(10),
+        child: LayoutBuilder(
             builder: (BuildContext context, BoxConstraints constraints) {
-              return Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    'assets/images/players/$nickname.png',
-                    width: constraints.maxWidth * 0.5,
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Text(
-                    nickname,
-                    style: TextStyle(
-                      fontSize: textSize,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                ],
-              );
-            },
-          ),
-        );
-      },
-    );
+          return Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'assets/images/players/$nickName.png',
+                height: constraints.maxHeight * 0.6,
+              ),
+              SizedBox(
+                height: constraints.maxHeight * 0.1,
+              ),
+              Text(
+                nickName,
+                style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  fontSize: fontSizeNicknane,
+                ),
+              )
+            ],
+          );
+        }),
+      );
+    });
   }
 }
