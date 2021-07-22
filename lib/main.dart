@@ -1,6 +1,7 @@
 import 'package:evilcraft_web/routing/route_names.dart';
 import 'package:evilcraft_web/utils/theme.dart';
 import 'package:evilcraft_web/view/layout_template/layout_template.dart';
+import 'package:evilcraft_web/view/permissions/permissions_view.dart';
 import 'package:evilcraft_web/view/players/players_view.dart';
 import 'package:flutter/material.dart';
 import 'package:routemaster/routemaster.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
 final routes = RouteMap(routes: {
   HomeRoute: (_) => MaterialPage(child: HomeView()),
   PlayersRoute: (_) => MaterialPage(child: PlayersView()),
+  PermissionsRoute: (_) => MaterialPage(child: PermissionsView()),
 });
 
 final routeMaster = RoutemasterDelegate(
