@@ -23,6 +23,8 @@ class NavigationBarTabletDesktop extends StatelessWidget {
               NavBarItem('Учасники', PlayersRoute, icon: Icons.person,),
               SizedBox(width: 30),
               NavBarItem('Права', PermissionsRoute, icon: Icons.rule_sharp,),
+              SizedBox(width: 30),
+              NavBarItem('Карта', MapRoute, icon: Icons.map,),
             ],
           ),
         ],
