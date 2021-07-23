@@ -38858,7 +38858,7 @@ return q},
 $S:10}
 M.G3.prototype={
 F:function(a,b){var s=null
-return T.hb(new K.pR('<iframe src="http://play.eviloma.com:8100/"></iframe>',new M.a_6(),s),s,s,s)}}
+return T.hb(new K.pR('<iframe src="http://play.eviloma.com/map"></iframe>',new M.a_6(),s),s,s,s)}}
 M.a_6.prototype={
 $0:function(){return new M.zj(null,P.y(t.N,t.yi),new B.EU(H.a([],t.vf)))},
 $S:425}

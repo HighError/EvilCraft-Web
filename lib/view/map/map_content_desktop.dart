@@ -9,7 +9,7 @@ class MapContentDesktop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: HtmlWidget(
-        '<iframe src="http://play.eviloma.com:8100/"></iframe>',
+        '<iframe src="http://play.eviloma.com/map"></iframe>',
         factoryBuilder: () => WebMap(),
       ),
     );
