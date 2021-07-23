@@ -29,7 +29,7 @@ class LayoutTemplate extends StatelessWidget {
                 alignment: Alignment.center,
                 height: 40,
                 child: Text(
-                  'EvilCraft © 2021\nDevelop by HighError special for minecraft server EvilCraft',
+                  'EvilCraft © 2021\nDevelop by HighError special for EvilCraft',
                   textAlign: TextAlign.center,
                 ),
               ),
