@@ -17,6 +17,7 @@ class TitleWidget extends StatelessWidget {
 
         return Text(
           title,
+          textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: titleSize,
           ),

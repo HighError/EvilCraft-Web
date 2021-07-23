@@ -27,8 +27,11 @@ class LayoutTemplate extends StatelessWidget {
               SizedBox(height: 10),
               Container(
                 alignment: Alignment.center,
-                height: 25,
-                child: Text('EvilCraft © 2021. Develop by HighError special for minecraft server EvilCraft'),
+                height: 40,
+                child: Text(
+                  'EvilCraft © 2021\nDevelop by HighError special for minecraft server EvilCraft',
+                  textAlign: TextAlign.center,
+                ),
               ),
               SizedBox(height: 10),
             ],
