@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class NavBarLogo extends StatelessWidget {
   const NavBarLogo({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class NavBarLogo extends StatelessWidget {
     return SizedBox(
       height: 80,
       width: 150,
-      child: Image.asset('assets/images/logo.png'),
+      child: SvgPicture.asset('assets/images/logo.svg'),
     );
   }
 }
