@@ -1,4 +1,5 @@
 import 'package:evilcraft_web/routing/route_names.dart';
+import 'package:evilcraft_web/utils/no_animation_page.dart';
 import 'package:evilcraft_web/utils/theme.dart';
 import 'package:evilcraft_web/view/layout_template/layout_template.dart';
 import 'package:evilcraft_web/view/map/map_view.dart';
@@ -21,20 +22,27 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'EvilCraft',
       theme: theme,
-      builder: (context, child) => LayoutTemplate(child: child!),
+      builder: (context, child) => child!,
       routerDelegate: routeMaster,
       routeInformationParser: RoutemasterParser(),
+
     );
   }
 }
 
 final routes = RouteMap(routes: {
-  HomeRoute: (_) => MaterialPage(child: HomeView()),
-  PlayersRoute: (_) => MaterialPage(child: PlayersView()),
-  PermissionsRoute: (_) => MaterialPage(child: PermissionsView()),
-  MapRoute: (_) => MaterialPage(child: MapView()),
+  HomeRoute: (_) =>
+      NoAnimationPage(child: LayoutTemplate(fullScreen: false, child: HomeView())),
+  PlayersRoute: (_) =>
+      NoAnimationPage(child: LayoutTemplate(fullScreen: false, child: PlayersView())),
+  PermissionsRoute: (_) =>
+      NoAnimationPage(child: LayoutTemplate(fullScreen: false, child: PermissionsView())),
+  MapRoute: (_)  =>
+      NoAnimationPage(child: LayoutTemplate(fullScreen: false, child: MapView())),
 });
 
 final routeMaster = RoutemasterDelegate(
   routesBuilder: (context) => routes,
 );
+
+

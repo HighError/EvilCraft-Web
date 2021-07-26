@@ -6,11 +6,15 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 class LayoutTemplate extends StatelessWidget {
   final Widget? child;
+  final bool fullScreen;
 
-  const LayoutTemplate({Key? key, required this.child}) : super(key: key);
+  const LayoutTemplate({Key? key, required this.child, required this.fullScreen}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    if (fullScreen){
+      return Container(child: child!,);
+    }
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
@@ -41,3 +45,4 @@ class LayoutTemplate extends StatelessWidget {
     );
   }
 }
+
