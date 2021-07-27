@@ -3,8 +3,9 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 class PlayerWidget extends StatelessWidget {
   final String nickName;
+  final bool skin;
 
-  const PlayerWidget({Key? key, required this.nickName}) : super(key: key);
+  const PlayerWidget({Key? key, required this.nickName, required this.skin}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,7 @@ class PlayerWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/players/$nickName.png',
+                'assets/images/players/${skin?nickName:"default"}.png',
                 height: constraints.maxHeight * 0.6,
               ),
               SizedBox(

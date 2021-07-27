@@ -9,11 +9,10 @@ class MapView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: TitleWidget(title: 'Контент поки недоступний! Дочекайтесь оновлення'),
-      /*HtmlWidget(
+      child: HtmlWidget(
         '<iframe src="https://play.eviloma.com/map"></iframe>',
         factoryBuilder: () => WebMap(),
-      ),*/
+      ),
     );
   }
 }
