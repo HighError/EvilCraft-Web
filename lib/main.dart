@@ -3,6 +3,7 @@ import 'package:evilcraft_web/utils/no_animation_page.dart';
 import 'package:evilcraft_web/utils/theme.dart';
 import 'package:evilcraft_web/view/layout_template/layout_template.dart';
 import 'package:evilcraft_web/view/map/map_view.dart';
+import 'package:evilcraft_web/view/news/news_view.dart';
 import 'package:evilcraft_web/view/permissions/permissions_view.dart';
 import 'package:evilcraft_web/view/players/players_view.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +40,8 @@ final routes = RouteMap(routes: {
       NoAnimationPage(child: LayoutTemplate(fullScreen: false, child: PermissionsView())),
   MapRoute: (_)  =>
       NoAnimationPage(child: LayoutTemplate(fullScreen: false, child: MapView())),
+  NewsRoute: (_)  =>
+      NoAnimationPage(child: LayoutTemplate(fullScreen: false, child: NewsView())),
 });
 
 final routeMaster = RoutemasterDelegate(

@@ -27,6 +27,7 @@ class NavigationDrawer extends StatelessWidget {
           NavBarItem('Учасники', PlayersRoute, icon: Icons.person,),
           NavBarItem('Права', PermissionsRoute, icon: Icons.rule_sharp,),
           NavBarItem('Карта', MapRoute, icon: Icons.map,),
+          NavBarItem('Новини', NewsRoute, icon: Icons.public,),
         ],
       ),
     );
